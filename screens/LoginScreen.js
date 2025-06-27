@@ -12,15 +12,12 @@ export default function LoginScreen({ navigation }) {
     const [password, setPassword] = useState('');
 
     const handleLogin = async () => {
-        console.log('pressed');
         try {
             await signInWithEmailAndPassword(auth, email, password);
         } catch (error) {
-            Alert.alert('Giriş Hatası', error.message);
-            console.log('❌ Giriş hatası:', error);
+            Alert.alert('ERROR 500', error.message);
         }
     };
-
 
     return (
         <View style={styles.container}>
