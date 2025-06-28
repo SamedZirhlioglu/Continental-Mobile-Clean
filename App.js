@@ -10,6 +10,7 @@ import { ActivityIndicator, View } from 'react-native';
 import ProductListScreen from './screens/ProductListScreen';
 import CustomerVisitingScreen from './screens/CustomerVisitingScreen';
 import CustomerDetailScreen from './screens/CustomerDetailScreen';
+import VisitingProductsScreen from './screens/VisitingProductsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,7 @@ export default function App() {
             <Stack.Screen name="ProductList" component={ProductListScreen} />
             <Stack.Screen name="CustomerVisiting" component={CustomerVisitingScreen} />
             <Stack.Screen name="CustomerDetail" component={CustomerDetailScreen} />
+            <Stack.Screen name="VisitingProducts" component={VisitingProductsScreen} />
           </>
         ) : (
           <Stack.Screen name="Login" component={LoginScreen} />
