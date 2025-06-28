@@ -2,7 +2,7 @@
   "expo": {
     "name": "Continental Mobile",
     "slug": "Continental-Mobile-Clean",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -21,10 +21,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.continentalwholesale.ContinentalMobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eee7bfe0-2678-40c8-a6d3-d7895b65e6da"
+      }
     }
   }
 }
