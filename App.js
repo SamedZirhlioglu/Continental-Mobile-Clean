@@ -8,6 +8,8 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebaseConfig';
 import { ActivityIndicator, View } from 'react-native';
 import ProductListScreen from './screens/ProductListScreen';
+import CustomerVisitingScreen from './screens/CustomerVisitingScreen';
+import CustomerDetailScreen from './screens/CustomerDetailScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +41,8 @@ export default function App() {
           <>
             <Stack.Screen name="Tabs" component={Tabs} />
             <Stack.Screen name="ProductList" component={ProductListScreen} />
+            <Stack.Screen name="CustomerVisiting" component={CustomerVisitingScreen} />
+            <Stack.Screen name="CustomerDetail" component={CustomerDetailScreen} />
           </>
         ) : (
           <Stack.Screen name="Login" component={LoginScreen} />

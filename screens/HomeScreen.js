@@ -1,11 +1,15 @@
 // screens/HomeScreen.js
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function HomeScreen({ navigation }) {
     const handleProductListPress = () => {
-        navigation.navigate('ProductList'); // ➡️ Bu sayfa varsa yönlendirir
+        navigation.navigate('ProductList');
+    };
+
+    const handleCustomerVisitingPress = () => {
+        navigation.navigate('CustomerVisiting');
     };
 
     return (
@@ -13,6 +17,11 @@ export default function HomeScreen({ navigation }) {
             <TouchableOpacity style={styles.card} onPress={handleProductListPress}>
                 <Ionicons name="pricetags-outline" size={30} color="tomato" style={styles.icon} />
                 <Text style={styles.title}>Product List</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.card} onPress={handleCustomerVisitingPress}>
+                <Ionicons name="people-outline" size={30} color="tomato" style={styles.icon} />
+                <Text style={styles.title}>Customer Visiting</Text>
             </TouchableOpacity>
         </View>
     );
