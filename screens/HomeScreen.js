@@ -23,6 +23,11 @@ export default function HomeScreen({ navigation }) {
                 <Ionicons name="people-outline" size={30} color="tomato" style={styles.icon} />
                 <Text style={styles.title}>Customer Visiting</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Packages')}>
+                <Ionicons name="cube-outline" size={30} color="dodgerblue" style={styles.icon} />
+                <Text style={styles.title}>Packages</Text>
+            </TouchableOpacity>
         </View>
     );
 }
